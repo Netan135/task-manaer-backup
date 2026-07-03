@@ -2,27 +2,23 @@
   "name": "task-manager-app",
   "version": "1.0.0",
   "description": "Task Manager Application",
+  "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.7.3"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.5.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
-  },
-
-
-  "engines": {
-    "node": "18.x"
-  },
-  "keywords": ["task-manager", "nodejs", "express", "mongodb", "jwt"],
-  "author": "Netan Thakur netanthakur@25gmail.com",
-  "license": "MIT"
+    "nodemon": "^3.0.1"
+  }
 }

@@ -5,6 +5,20 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
+// ✅ FIX: Ensure crypto is defined for Render
+if (typeof crypto === 'undefined') {
+    global.crypto = require('crypto');
+}
+
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const path = require('path');
+require('dotenv').config();
+
+const app = express();
+
+// ... rest of your code
 
 // Middleware
 app.use(cors({
